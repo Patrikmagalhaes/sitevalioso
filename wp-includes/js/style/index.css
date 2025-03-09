@@ -1,0 +1,38 @@
+/* Estilo para o ícone do WhatsApp */
+#whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    animation: grow-shrink 1.5s infinite, blink 1s infinite;
+  }
+  
+  #whatsapp-img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+  }
+  
+  #whatsapp-icon:hover #whatsapp-img {
+    transform: scale(1.2);
+  }
+  
+  /* Animação para o efeito de crescer e diminuir */
+  @keyframes grow-shrink {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+  /* Animação para o efeito de piscar */
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
