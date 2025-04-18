@@ -22,23 +22,43 @@
 		href="comments/feed/index.html" />
 
 
-<!-- Meta Pixel Code -->
-<script>
-	!function(f,b,e,v,n,t,s)
-	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-	n.queue=[];t=b.createElement(e);t.async=!0;
-	t.src=v;s=b.getElementsByTagName(e)[0];
-	s.parentNode.insertBefore(t,s)}(window, document,'script',
-	'https://connect.facebook.net/en_US/fbevents.js');
-	fbq('init', '1846314246190878');
-	fbq('track', 'PageView');
+
+
+
+	<!-- Meta Pixel Code -->
+	<script>
+		!function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '1846314246190878');
+		fbq('track', 'PageView');
 	</script>
 	<noscript><img height="1" width="1" style="display:none"
-	src="https://www.facebook.com/tr?id=1846314246190878&ev=PageView&noscript=1"
-	/></noscript>
+			src="https://www.facebook.com/tr?id=1846314246190878&ev=PageView&noscript=1" /></noscript>
 	<!-- End Meta Pixel Code -->
+
+<!-- Função de marcar LEad -->
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const botao = document.getElementsByClassName('botaoContato');
+			if (botao) {
+				botao.addEventListener('click', function () {
+					fbq('track', 'Lead'); // Ou fbq('trackCustom', 'ContatoEnviado')
+					console.log('Evento Lead enviado');
+				});
+			}
+		});
+	</script>
+
 
 
 	<script>
@@ -703,7 +723,7 @@
 								data-id="2f965ea8" data-element_type="widget" data-widget_type="button.default">
 								<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
-										<a class="elementor-button elementor-button-link elementor-size-sm"
+										<a target="_blank" class="botaoContato elementor-button elementor-button-link elementor-size-sm"
 											href="https://wa.me/5569999523234?text=Ol%C3%A1%2C%20tenho%20interesse%20e%20quero%20mais%20informa%C3%A7%C3%B5es%20porfavor!">
 											<span class="elementor-button-content-wrapper">
 												<span class="elementor-button-text">contato</span>
@@ -774,7 +794,7 @@
 								data-id="67e99ab0" data-element_type="widget" data-widget_type="button.default">
 								<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
-										<a class="elementor-button elementor-button-link elementor-size-md"
+										<a target="_blank" class="botaoContato elementor-button elementor-button-link elementor-size-md"
 											href="https://wa.me/5569999523234?text=Ol%C3%A1%2C%20tenho%20interesse%20e%20quero%20mais%20informa%C3%A7%C3%B5es%20porfavor!">
 											<span class="elementor-button-content-wrapper">
 												<span class="elementor-button-icon">
@@ -884,21 +904,21 @@
 
 
 							</li>
-							<li> 
+							<li>
 								✅ Um pack de criativos pensado para anúncios de imóveis
-								
+
 							</li>
 							<li>
 								✅ Sistema de cadastro e remoção de imóveis com total facilidade
-								
+
 
 							</li>
 							<li>
 								✅ Total liberdade: você usa com qualquer gestor de tráfego
-								
+
 							</li>
 							<li>
-								
+
 								✅ Tudo pronto para gerar leads qualificados e reais
 							</li>
 						</ul>
@@ -908,7 +928,7 @@
 						data-id="1d5e3f54" data-element_type="widget" data-widget_type="button.default">
 						<div class="elementor-widget-container">
 							<div class="elementor-button-wrapper" style="display: flex;justify-content: center;">
-								<a class="elementor-button elementor-button-link elementor-size-md"
+								<a target="_blank" class="botaoContato elementor-button elementor-button-link elementor-size-md"
 									href="https://wa.me/5569999523234?text=Ol%C3%A1%2C%20tenho%20interesse%20e%20quero%20mais%20informa%C3%A7%C3%B5es%20porfavor!">
 									<span class="elementor-button-content-wrapper">
 										<span class="elementor-button-text">Saber mais</span>
@@ -940,7 +960,7 @@
 									</div>
 								</div>
 							</div>
-							<div  class="elementor-element elementor-element-78de6624 elementor-widget elementor-widget-heading"
+							<div class="elementor-element elementor-element-78de6624 elementor-widget elementor-widget-heading"
 								data-id="78de6624" data-element_type="widget" data-widget_type="heading.default">
 								<div class="elementor-widget-container">
 									<h6 class="elementor-heading-title elementor-size-default">Pra quem é</h6>
@@ -981,7 +1001,7 @@
 								data-id="108436c1" data-element_type="widget" data-widget_type="button.default">
 								<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
-										<a class="elementor-button elementor-button-link elementor-size-sm"
+										<a target="_blank" class="botaoContato elementor-button elementor-button-link elementor-size-sm"
 											href="https://wa.me/5569999523234?text=Ol%C3%A1%2C%20tenho%20interesse%20e%20quero%20mais%20informa%C3%A7%C3%B5es%20porfavor!">
 											<span class="elementor-button-content-wrapper">
 												<span class="elementor-button-text">saber mais</span>
@@ -1130,8 +1150,7 @@
 				data-id="440dcf47" data-element_type="widget"
 				data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-					<img loading="lazy" decoding="async" width="2000" height="1335"
-						src=""
+					<img loading="lazy" decoding="async" width="2000" height="1335" src=""
 						class="attachment-full size-full wp-image-25" alt=""
 						srcset="https://elevatelp.com.br/wp-content/uploads/2025/02/shot-of-two-young-workers-using-a-digital-tablet-in-a-modern-office.jpg 2000w, https://elevatelp.com.br/wp-content/uploads/2025/02/shot-of-two-young-workers-using-a-digital-tablet-in-a-modern-office-300x200.jpg 300w, https://elevatelp.com.br/wp-content/uploads/2025/02/shot-of-two-young-workers-using-a-digital-tablet-in-a-modern-office-1024x684.jpg 1024w, https://elevatelp.com.br/wp-content/uploads/2025/02/shot-of-two-young-workers-using-a-digital-tablet-in-a-modern-office-768x513.jpg 768w, https://elevatelp.com.br/wp-content/uploads/2025/02/shot-of-two-young-workers-using-a-digital-tablet-in-a-modern-office-1536x1025.jpg 1536w"
 						sizes="(max-width: 2000px) 100vw, 2000px" />
@@ -1412,7 +1431,8 @@
 						<div class="elementor-element elementor-element-2ee93c83 elementor-widget elementor-widget-heading"
 							data-id="2ee93c83" data-element_type="widget" data-widget_type="heading.default">
 							<div class="elementor-widget-container">
-								<h2 class="elementor-heading-title elementor-size-default">Site, criativos e sistema: tudo o que um corretor precisa pra crescer online.
+								<h2 class="elementor-heading-title elementor-size-default">Site, criativos e sistema:
+									tudo o que um corretor precisa pra crescer online.
 								</h2>
 							</div>
 						</div>
@@ -1635,7 +1655,7 @@
 								data-id="edf87b4" data-element_type="widget" data-widget_type="button.default">
 								<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
-										<a class="elementor-button elementor-button-link elementor-size-sm"
+										<a target="_blank" class="botaoContato elementor-button elementor-button-link elementor-size-sm"
 											href="https://wa.me/5569999523234?text=Ol%C3%A1%2C%20tenho%20interesse%20e%20quero%20mais%20informa%C3%A7%C3%B5es%20porfavor!">
 											<span class="elementor-button-content-wrapper">
 												<span class="elementor-button-icon">
@@ -1684,8 +1704,11 @@
 							<div class="elementor-element elementor-element-5c4c5e4d elementor-widget elementor-widget-heading"
 								data-id="5c4c5e4d" data-element_type="widget" data-widget_type="heading.default">
 								<div class="elementor-widget-container">
-									<div class="elementor-heading-title elementor-size-default">A Site Valioso desenvolve estruturas estratégicas, modernas e eficientes para corretores que querem se destacar no mercado americano.
-										Transformamos sua presença digital em uma máquina de geração de leads e novas oportunidades!</div>
+									<div class="elementor-heading-title elementor-size-default">A Site Valioso
+										desenvolve estruturas estratégicas, modernas e eficientes para corretores que
+										querem se destacar no mercado americano.
+										Transformamos sua presença digital em uma máquina de geração de leads e novas
+										oportunidades!</div>
 								</div>
 							</div>
 							<div class="elementor-element elementor-element-2c96ac29 elementor-shape-circle elementor-grid-0 elementor-widget elementor-widget-social-icons"
@@ -1785,7 +1808,7 @@
 
 
 	<div id="whatsapp-icon">
-		<a href="https://api.whatsapp.com/send/?phone=5569999523234&text=Ol%C3%A1%2C+tenho+interesse+e+quero+mais+informa%C3%A7%C3%B5es+porfavor%21&type=phone_number&app_absent=0"
+		<a class="botaoContato" href="https://api.whatsapp.com/send/?phone=5569999523234&text=Ol%C3%A1%2C+tenho+interesse+e+quero+mais+informa%C3%A7%C3%B5es+porfavor%21&type=phone_number&app_absent=0"
 			target="_blank">
 			<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
 				id="whatsapp-img">
